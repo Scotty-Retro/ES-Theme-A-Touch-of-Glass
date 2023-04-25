@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>  
+
+      <view name="system">
+	  
+<carousel name="systemcarousel">
+<defaultTransition>fade</defaultTransition>
+<zIndex>200</zIndex>
+<maxLogoCount>1</maxLogoCount>
+<color>ffffff00</color>
+<colorEnd>ffffff00</colorEnd>
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
+<logoSize>0.2 0.2</logoSize>
+<logoScale>3</logoScale>
+<size>1 1</size>
+<pos>0 0.15</pos>
+</carousel>
+
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/assets/noise.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>  
+        <pos>0.5 0.5</pos>
+        <origin>0.5 0.5</origin>
+        <size>1 1</size>
+        <delay>0</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <zIndex>1</zIndex>
+     </video>
+
+	   <image name="cliente" extra="true">
+		<pos>0.45 0.765</pos>
+		<maxSize>0.08 0.08</maxSize>
+		<color>ffffff</color>
+		<path>./_inc/assets/cliente.png</path>
+		<zIndex>999</zIndex>
+	  </image>
+
+      <text name="systemInfo">
+        <pos>0 0.79</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>cccccc</color>
+        <fontPath>./_inc/fonts/FS_JC_bsicaunicode.ttf</fontPath>
+	    <fontSize>0.036</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+
+<image name="arrowright" extra="true">
+<pos>0.78 0.67</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.20 0.20</maxSize>
+<path>./_inc/glassarrowright.png</path>
+<storyboard repeat="forever">
+<animation property="x" from="0.8" to="0.85" duration="1000" autoreverse="true" begin="100" repeat="forever"/>
+</storyboard>
+<zIndex>90</zIndex> 
+</image>
+
+<image name="arrowleft" extra="true">
+<pos>0.22 0.67</pos>
+<origin>0.5 0.5</origin>
+<maxSize>0.20 0.20</maxSize>
+<path>./_inc/glassarrowleft.png</path>
+<storyboard repeat="forever">
+<animation property="x" from="0.2" to="0.16" duration="1000" autoreverse="true" begin="100" repeat="forever"/>
+</storyboard>
+<zIndex>90</zIndex> 
+</image>
+
+   
+	       <helpsystem name="help">
+	 <iconColor>ffffff</iconColor>
+	  <textColor>ffffff</textColor>
+	 <fontPath>./_inc/fonts/FS_JC_bsicaunicode.ttf</fontPath>
+     <fontSize>0.034</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5 0.97</pos>
+     </helpsystem>
+
+
+
+       </view>
+
+</theme>

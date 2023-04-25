@@ -1,0 +1,124 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+<carousel name="systemcarousel">
+<defaultTransition>fade</defaultTransition>
+<zIndex>200</zIndex>
+<maxLogoCount>1</maxLogoCount>
+<color>ffffff00</color>
+<colorEnd>ffffff00</colorEnd>
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
+<logoSize>0.1 0.1</logoSize>
+<logoScale>3</logoScale>
+<size>1 1</size>
+<pos>0 -0.13</pos>
+</carousel>
+
+
+      <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+         <pos>-0.32 0.83</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+        <fontPath>./_inc/fonts/FS_JC_bsicaunicode.ttf</fontPath>
+	    <fontSize>0.040</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+	  
+
+
+	   <image name="wallpapers" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+	 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/wallpapers/${system.theme}.jpg</path>
+	     <storyboard>
+         <animation property="x" from="-2" begin="0" duration="0" mode="easyOut"/>
+         <animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		 </storyboard>
+		 <zIndex>1</zIndex>
+      </image>
+
+	   <image name="glass" extra="true">
+         <origin>0 0</origin>
+         <pos>-0.1 0</pos>
+         <size>1 1</size>
+         <path>./_inc/2daiglass.png</path>
+		 <zIndex>3</zIndex>
+      </image>
+
+ 	 
+	  <image name="chars" extra="true">
+		<pos>0.56 0.05</pos>
+		<maxSize>0.9 0.9</maxSize>
+		<color>ffffff</color>
+		<path>./default/char-d.png</path>
+		<path>./_inc/chars/chars/${system.theme}.png</path>
+		<storyboard> 
+        <animation property="x" from="1.01" begin="0" duration="1000" mode="Bump"/>
+        <animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+		</storyboard>
+		<zIndex>998</zIndex>
+	  </image>
+	  
+	 	  
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.47 0.98</pos>
+     <fontPath>./_inc/FS_JC_bsicaunicode.ttf</fontPath>
+     </helpsystem>
+
+
+	   <image name="clearlogos" extra="true">
+         <origin>0 0</origin>
+         <pos>0.1 0.05</pos>
+         <size>0.165 0.16</size>
+        <delay>20000</delay>
+         <path>./_inc/logos/${system.theme}.png</path>
+           <storyboard>
+        <animation property="y" from="0.05" begin="0" duration="1400" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="2200" mode="easeIn"/>
+           </storyboard>
+		 <zIndex>6</zIndex>
+      </image>
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/assets/noise.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>                
+        <pos>0.176 0.49</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.33 0.7</size>
+        <delay>0.3</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <storyboard>
+        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+        <zIndex>2</zIndex>
+     </video>
+
+	 <video name="custombackgroundvideo" extra="true">
+        <default>./_inc/assets/noise.mp4</default> 
+        <rotation>-4</rotation>  
+        <roundCorners>0.04</roundCorners>             
+	  <path>./_inc/videos/${system.theme}.mp4</path>
+        <pos>0.45 0.485</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.4860 0.682</size>
+        <delay>0.3</delay>
+        <zIndex>2</zIndex>
+     </video>
+ 
+       </view>
+    </theme>

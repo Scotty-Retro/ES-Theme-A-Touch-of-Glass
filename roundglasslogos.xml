@@ -1,0 +1,26 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <image name="logo">
+       <linearSmooth>true</linearSmooth>
+         <path>./_inc/roundglass/${system.theme}.png</path>
+          <pos>0.34 0</pos>
+          <size>1 1</size>
+          <logoSize>0.3 0.3</logoSize>
+          <maxLogoCount>5</maxLogoCount>
+<storyboard event="activate">
+<animation property="opacity" from="0" to="1" duration="100" mode="Linear"/>
+</storyboard>
+<storyboard event="scroll">
+<animation property="x" to="0.5" begin="1500" duration="200" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="100" mode="Linear"/>
+<animation property="opacity" from="1" to="1" begin="1150" duration="25" mode="Linear"/>
+</storyboard>
+
+	   </image>
+       </view>
+
+
+    </theme>

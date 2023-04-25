@@ -1,0 +1,71 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+<carousel name="systemcarousel">
+<defaultTransition>fade</defaultTransition>
+<zIndex>200</zIndex>
+<maxLogoCount>1</maxLogoCount>
+<color>ffffff00</color>
+<colorEnd>ffffff00</colorEnd>
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
+<logoSize>0.3 0.3</logoSize>
+<logoScale>3</logoScale>
+<size>1 1</size>
+<pos>0 -0.13</pos>
+</carousel>
+
+
+      <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+         <pos>-0.32 0.83</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+        <fontPath>./_inc/fonts/FS_JC_bsicaunicode.ttf</fontPath>
+	    <fontSize>0.040</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+	  
+
+
+	   <image name="wallpapers" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+	 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/wallpapers/${system.theme}.jpg</path>
+	     <storyboard>
+         <animation property="x" from="-2" begin="0" duration="0" mode="easyOut"/>
+         <animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		 </storyboard>
+		 <zIndex>1</zIndex>
+      </image>
+
+ 	 
+	  <image name="chars" extra="true">
+		<pos>0.56 0.05</pos>
+		<maxSize>0.9 0.9</maxSize>
+		<color>ffffff</color>
+		<path>./default/char-d.png</path>
+		<path>./_inc/chars/chars/${system.theme}.png</path>
+		<storyboard> 
+        <animation property="x" from="1.01" begin="0" duration="1000" mode="Bump"/>
+        <animation property="scale" to="1.02" begin="1100" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+		</storyboard>
+		<zIndex>998</zIndex>
+	  </image>
+	  
+	 	  
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.47 0.98</pos>
+     <fontPath>./_inc/FS_JC_bsicaunicode.ttf</fontPath>
+     </helpsystem>
+ 
+       </view>
+    </theme>
